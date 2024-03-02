@@ -1,0 +1,448 @@
+\doxysection{lab2\+::Domino\+Group Class Reference}
+\hypertarget{classlab2_1_1_domino_group}{}\label{classlab2_1_1_domino_group}\index{lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group_ac29ec6c26d77badfc923f5df0756e41b}{Domino\+Group}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group_a586be08e07b69a3cafbd087a1ceac1a3}{Domino\+Group}} (int cp)
+\begin{DoxyCompactList}\small\item\em Explicit constructor with capacity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group_a708ac97e8241f0cf3876a86aafbec2f4}{Domino\+Group}} (const std\+::vector$<$ \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} $>$ \&bones)
+\begin{DoxyCompactList}\small\item\em Constructor with a vector of dominoes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group_ac53e7b3d694fc43fe31e27ab53e122db}{Domino\+Group}} (const \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group_ae41ad468abb3476df02dc207078355f9}{Domino\+Group}} (\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group_a6ae1986aceedad0f99ed464cc9cabd02}{\texorpdfstring{$\sim$}{\string~}\+Domino\+Group}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlab2_1_1_domino_group_a94cbdf95fb89c9acc7e7f987d42bafce}{set\+Capacity}} (int cp)
+\begin{DoxyCompactList}\small\item\em Sets the capacity of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlab2_1_1_domino_group_a684aea96f0bf0e8a093e10ea27220415}{set\+Size}} (int sz)
+\begin{DoxyCompactList}\small\item\em Sets the size of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlab2_1_1_domino_group_ad4b3aaa2ab07235dc49cb9444e06332c}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the capacity of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlab2_1_1_domino_group_a56ecb868e9706021bc20b517b30b1eb0}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Gets the size of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \& \mbox{\hyperlink{classlab2_1_1_domino_group_ad8f6743c8c6676a96e76b49bba562fa1}{operator+=}} (const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&domino)
+\begin{DoxyCompactList}\small\item\em Adds a domino to the group. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \& \mbox{\hyperlink{classlab2_1_1_domino_group_a34c73b74ba97fe990f43316679dc2270}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em Accesses a domino in the group by index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \& \mbox{\hyperlink{classlab2_1_1_domino_group_a56b026f455032a4a5f6ae75f0dd284db}{operator=}} (const \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&group)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \& \mbox{\hyperlink{classlab2_1_1_domino_group_a63778c21cad58199eaebb955d7cbe13b}{operator=}} (\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlab2_1_1_domino_group_a4c4330a7b5794a1c9cca31a53607ff6d}{add\+Domino}} (const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&domino)
+\begin{DoxyCompactList}\small\item\em Adds a domino to the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \mbox{\hyperlink{classlab2_1_1_domino_group_a3b9f5d8f419f8ab1e34e2cb5a2042037}{remove\+Domino}} (const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&domino)
+\begin{DoxyCompactList}\small\item\em Removes a specific domino from the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \mbox{\hyperlink{classlab2_1_1_domino_group_a1d7c6476237c109c2d37e2573670f120}{remove\+Domino\+By\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Removes a domino from the group by its index. \end{DoxyCompactList}\item 
+\Hypertarget{classlab2_1_1_domino_group_a726fb60883aec16cd3de731ac335141d}\label{classlab2_1_1_domino_group_a726fb60883aec16cd3de731ac335141d} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em Clears the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}, removing all dominoes. \end{DoxyCompactList}\item 
+\Hypertarget{classlab2_1_1_domino_group_a0996a1c77770869fd8871f8c334eb038}\label{classlab2_1_1_domino_group_a0996a1c77770869fd8871f8c334eb038} 
+void {\bfseries sort\+By\+Sum\+Ascending} ()
+\begin{DoxyCompactList}\small\item\em Sorts the dominoes in the group by the sum of their values in ascending order. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \mbox{\hyperlink{classlab2_1_1_domino_group_a41fb24e850d155b85abc650c0d0006f4}{extract\+Subgroup}} (int value)
+\begin{DoxyCompactList}\small\item\em Extracts a subgroup of dominoes containing a specific value. \end{DoxyCompactList}\item 
+\Hypertarget{classlab2_1_1_domino_group_a57e87f70236b586a31a1932f4e497d3d}\label{classlab2_1_1_domino_group_a57e87f70236b586a31a1932f4e497d3d} 
+void {\bfseries print} ()
+\begin{DoxyCompactList}\small\item\em Prints the \doxylink{classlab2_1_1_domino_group}{Domino\+Group} to the standard output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \mbox{\hyperlink{classlab2_1_1_domino_group_aee5c519c41473cf3d2bc451a8fbd03af}{create\+Random\+Group}} (int cp)
+\begin{DoxyCompactList}\small\item\em Generates a random \doxylink{classlab2_1_1_domino_group}{Domino\+Group} with the specified capacity. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \mbox{\hyperlink{classlab2_1_1_domino_group_a144f9e692d6154329fd8d4f2c7830989}{create\+Group\+With\+All\+Types}} (int num)
+\begin{DoxyCompactList}\small\item\em Generates a \doxylink{classlab2_1_1_domino_group}{Domino\+Group} with all possible domino types up to a given number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classlab2_1_1_domino_group_a2151046713cab17105ca4e15b032c2d9}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&group)
+\begin{DoxyCompactList}\small\item\em The output operator for the \doxylink{classlab2_1_1_domino}{Domino} Group class. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classlab2_1_1_domino_group_a716357fa7d7c98cb9f0a8183b933d833}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&group)
+\begin{DoxyCompactList}\small\item\em Input operator for the \doxylink{classlab2_1_1_domino_group}{Domino\+Group} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlab2_1_1_domino_group_ac29ec6c26d77badfc923f5df0756e41b}\label{classlab2_1_1_domino_group_ac29ec6c26d77badfc923f5df0756e41b} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!DominoGroup@{DominoGroup}}
+\index{DominoGroup@{DominoGroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{DominoGroup()}{DominoGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+Group\+::\+Domino\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+Creates an empty \doxylink{classlab2_1_1_domino_group}{Domino\+Group} with a default capacity of 10. \Hypertarget{classlab2_1_1_domino_group_a586be08e07b69a3cafbd087a1ceac1a3}\label{classlab2_1_1_domino_group_a586be08e07b69a3cafbd087a1ceac1a3} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!DominoGroup@{DominoGroup}}
+\index{DominoGroup@{DominoGroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{DominoGroup()}{DominoGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+Group\+::\+Domino\+Group (\begin{DoxyParamCaption}\item[{int}]{cp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Explicit constructor with capacity. 
+
+Creates an empty \doxylink{classlab2_1_1_domino_group}{Domino\+Group} with the specified capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & The capacity of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab2_1_1_domino_group_a708ac97e8241f0cf3876a86aafbec2f4}\label{classlab2_1_1_domino_group_a708ac97e8241f0cf3876a86aafbec2f4} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!DominoGroup@{DominoGroup}}
+\index{DominoGroup@{DominoGroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{DominoGroup()}{DominoGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+Group\+::\+Domino\+Group (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} $>$ \&}]{bones }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor with a vector of dominoes. 
+
+Creates a \doxylink{classlab2_1_1_domino_group}{Domino\+Group} from a vector of dominoes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bones} & A vector containing dominoes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab2_1_1_domino_group_ac53e7b3d694fc43fe31e27ab53e122db}\label{classlab2_1_1_domino_group_ac53e7b3d694fc43fe31e27ab53e122db} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!DominoGroup@{DominoGroup}}
+\index{DominoGroup@{DominoGroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{DominoGroup()}{DominoGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+Group\+::\+Domino\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+Creates a new \doxylink{classlab2_1_1_domino_group}{Domino\+Group} by copying another \doxylink{classlab2_1_1_domino_group}{Domino\+Group}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{classlab2_1_1_domino_group}{Domino\+Group} to copy from. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab2_1_1_domino_group_ae41ad468abb3476df02dc207078355f9}\label{classlab2_1_1_domino_group_ae41ad468abb3476df02dc207078355f9} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!DominoGroup@{DominoGroup}}
+\index{DominoGroup@{DominoGroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{DominoGroup()}{DominoGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+Group\+::\+Domino\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+Creates a new \doxylink{classlab2_1_1_domino_group}{Domino\+Group} by moving the content of another \doxylink{classlab2_1_1_domino_group}{Domino\+Group}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{classlab2_1_1_domino_group}{Domino\+Group} to move from. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab2_1_1_domino_group_a6ae1986aceedad0f99ed464cc9cabd02}\label{classlab2_1_1_domino_group_a6ae1986aceedad0f99ed464cc9cabd02} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!````~DominoGroup@{\texorpdfstring{$\sim$}{\string~}DominoGroup}}
+\index{````~DominoGroup@{\texorpdfstring{$\sim$}{\string~}DominoGroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DominoGroup()}{\string~DominoGroup()}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+Group\+::\texorpdfstring{$\sim$}{\string~}\+Domino\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+Destroys the \doxylink{classlab2_1_1_domino_group}{Domino\+Group} and frees memory. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlab2_1_1_domino_group_a4c4330a7b5794a1c9cca31a53607ff6d}\label{classlab2_1_1_domino_group_a4c4330a7b5794a1c9cca31a53607ff6d} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!addDomino@{addDomino}}
+\index{addDomino@{addDomino}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{addDomino()}{addDomino()}}
+{\footnotesize\ttfamily void Domino\+Group\+::add\+Domino (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&}]{domino }\end{DoxyParamCaption})}
+
+
+
+Adds a domino to the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domino} & The domino to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab2_1_1_domino_group_a144f9e692d6154329fd8d4f2c7830989}\label{classlab2_1_1_domino_group_a144f9e692d6154329fd8d4f2c7830989} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!createGroupWithAllTypes@{createGroupWithAllTypes}}
+\index{createGroupWithAllTypes@{createGroupWithAllTypes}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{createGroupWithAllTypes()}{createGroupWithAllTypes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} Domino\+Group\+::create\+Group\+With\+All\+Types (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates a \doxylink{classlab2_1_1_domino_group}{Domino\+Group} with all possible domino types up to a given number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The maximum domino value to include in the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{classlab2_1_1_domino_group}{Domino\+Group} with all possible domino types up to the specified value. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_aee5c519c41473cf3d2bc451a8fbd03af}\label{classlab2_1_1_domino_group_aee5c519c41473cf3d2bc451a8fbd03af} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!createRandomGroup@{createRandomGroup}}
+\index{createRandomGroup@{createRandomGroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{createRandomGroup()}{createRandomGroup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} Domino\+Group\+::create\+Random\+Group (\begin{DoxyParamCaption}\item[{int}]{cp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates a random \doxylink{classlab2_1_1_domino_group}{Domino\+Group} with the specified capacity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & The capacity of the random \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a41fb24e850d155b85abc650c0d0006f4}\label{classlab2_1_1_domino_group_a41fb24e850d155b85abc650c0d0006f4} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!extractSubgroup@{extractSubgroup}}
+\index{extractSubgroup@{extractSubgroup}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{extractSubgroup()}{extractSubgroup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} Domino\+Group\+::extract\+Subgroup (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Extracts a subgroup of dominoes containing a specific value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to search for in the dominoes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{classlab2_1_1_domino_group}{Domino\+Group} containing the matching dominoes. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_ad4b3aaa2ab07235dc49cb9444e06332c}\label{classlab2_1_1_domino_group_ad4b3aaa2ab07235dc49cb9444e06332c} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int lab2\+::\+Domino\+Group\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the capacity of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+
+\begin{DoxyReturn}{Returns}
+The current capacity of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a56ecb868e9706021bc20b517b30b1eb0}\label{classlab2_1_1_domino_group_a56ecb868e9706021bc20b517b30b1eb0} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!getSize@{getSize}}
+\index{getSize@{getSize}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int lab2\+::\+Domino\+Group\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the size of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+
+\begin{DoxyReturn}{Returns}
+The current size of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_ad8f6743c8c6676a96e76b49bba562fa1}\label{classlab2_1_1_domino_group_ad8f6743c8c6676a96e76b49bba562fa1} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \& Domino\+Group\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&}]{domino }\end{DoxyParamCaption})}
+
+
+
+Adds a domino to the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domino} & The domino to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a56b026f455032a4a5f6ae75f0dd284db}\label{classlab2_1_1_domino_group_a56b026f455032a4a5f6ae75f0dd284db} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!operator=@{operator=}}
+\index{operator=@{operator=}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \& Domino\+Group\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&}]{group }\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+Assigns the content of another \doxylink{classlab2_1_1_domino_group}{Domino\+Group} by copying.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & The \doxylink{classlab2_1_1_domino_group}{Domino\+Group} to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a63778c21cad58199eaebb955d7cbe13b}\label{classlab2_1_1_domino_group_a63778c21cad58199eaebb955d7cbe13b} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!operator=@{operator=}}
+\index{operator=@{operator=}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \& Domino\+Group\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assignment operator. 
+
+Assigns the content of another \doxylink{classlab2_1_1_domino_group}{Domino\+Group} by moving.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{classlab2_1_1_domino_group}{Domino\+Group} to move from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a34c73b74ba97fe990f43316679dc2270}\label{classlab2_1_1_domino_group_a34c73b74ba97fe990f43316679dc2270} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \& Domino\+Group\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Accesses a domino in the group by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the domino to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the domino at the specified index. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a3b9f5d8f419f8ab1e34e2cb5a2042037}\label{classlab2_1_1_domino_group_a3b9f5d8f419f8ab1e34e2cb5a2042037} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!removeDomino@{removeDomino}}
+\index{removeDomino@{removeDomino}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{removeDomino()}{removeDomino()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} Domino\+Group\+::remove\+Domino (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&}]{domino }\end{DoxyParamCaption})}
+
+
+
+Removes a specific domino from the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domino} & The domino to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The removed domino. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a1d7c6476237c109c2d37e2573670f120}\label{classlab2_1_1_domino_group_a1d7c6476237c109c2d37e2573670f120} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!removeDominoByIndex@{removeDominoByIndex}}
+\index{removeDominoByIndex@{removeDominoByIndex}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{removeDominoByIndex()}{removeDominoByIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} Domino\+Group\+::remove\+Domino\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Removes a domino from the group by its index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the domino to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The removed domino. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a94cbdf95fb89c9acc7e7f987d42bafce}\label{classlab2_1_1_domino_group_a94cbdf95fb89c9acc7e7f987d42bafce} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily void lab2\+::\+Domino\+Group\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{cp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the capacity of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & The new capacity of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab2_1_1_domino_group_a684aea96f0bf0e8a093e10ea27220415}\label{classlab2_1_1_domino_group_a684aea96f0bf0e8a093e10ea27220415} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!setSize@{setSize}}
+\index{setSize@{setSize}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void lab2\+::\+Domino\+Group\+::set\+Size (\begin{DoxyParamCaption}\item[{int}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the size of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz} & The new size of the \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classlab2_1_1_domino_group_a2151046713cab17105ca4e15b032c2d9}\label{classlab2_1_1_domino_group_a2151046713cab17105ca4e15b032c2d9} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classlab2_1_1_domino_group}{Domino\+Group}} \&}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The output operator for the \doxylink{classlab2_1_1_domino}{Domino} Group class. 
+
+This operator allows you to output the contents of the \doxylink{classlab2_1_1_domino}{Domino} Group object to the output stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ the output stream to which the \doxylink{classlab2_1_1_domino_group}{Domino\+Group} object will be written. \\
+\hline
+{\em group} & -\/ the \doxylink{classlab2_1_1_domino}{Domino} Group object to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Link to the output stream after the \doxylink{classlab2_1_1_domino_group}{Domino\+Group} output. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_group_a716357fa7d7c98cb9f0a8183b933d833}\label{classlab2_1_1_domino_group_a716357fa7d7c98cb9f0a8183b933d833} 
+\index{lab2::DominoGroup@{lab2::DominoGroup}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!lab2::DominoGroup@{lab2::DominoGroup}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2\+::\+Domino\+Group}} \&}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Input operator for the \doxylink{classlab2_1_1_domino_group}{Domino\+Group} class. 
+
+This operator allows you to read the contents of the \doxylink{classlab2_1_1_domino}{Domino} Group object from the input stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & -\/ This operator allows you to read the contents of the \doxylink{classlab2_1_1_domino}{Domino} Group object from the input stream. \\
+\hline
+{\em group} & -\/ the \doxylink{classlab2_1_1_domino}{Domino} Group object to which the input will be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Link to the input stream after reading \doxylink{classlab2_1_1_domino_group}{Domino\+Group}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+domino\+\_\+group.\+h\item 
+domino\+\_\+group.\+cpp\end{DoxyCompactItemize}

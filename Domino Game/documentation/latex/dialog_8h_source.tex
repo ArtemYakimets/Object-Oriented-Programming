@@ -1,0 +1,47 @@
+\doxysection{dialog.\+h}
+\hypertarget{dialog_8h_source}{}\label{dialog_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LAB2A\_DIALOG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LAB2A\_DIALOG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}domino\_group.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00011\ T\ getNum\ (T\ min\ =\ std::numeric\_limits<T>::min(),\ T\ max\ =\ std::numeric\_limits<T>::max())\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ T\ a;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std::cin\ >>\ a;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::cin.eof())}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Failed\ to\ read\ number:\ EOF"{}});}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (std::cin.bad())\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(std::string(\textcolor{stringliteral}{"{}Failed\ to\ read\ number:\ "{}})\ +\ strerror(errno));}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (std::cin.fail())\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.clear();}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.ignore(std::numeric\_limits<std::streamsize>::max(),\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Try\ again!"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (a\ >=\ min\ \&\&\ a\ <=\ max)}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ a;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Try\ again!"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{int}\ dialog(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **,\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{int}\ dialogAddRandomBone(\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{int}\ dialogRemoveRandomBone(\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{int}\ dialogRemoveDominoByValues(\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{int}\ dialogRemoveDominoByIndex(\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{int}\ dialogFindDominoByIndex(\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{int}\ dialogSort(\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{int}\ dialogExtractSubgroupByValue\ (\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{int}\ dialogPrintDominoGroup\ (\mbox{\hyperlink{classlab2_1_1_domino_group}{lab2::DominoGroup}}\ \&group);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//LAB2A\_DIALOG\_H}}
+
+\end{DoxyCode}

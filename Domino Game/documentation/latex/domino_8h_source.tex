@@ -1,0 +1,51 @@
+\doxysection{domino.\+h}
+\hypertarget{domino_8h_source}{}\label{domino_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LAB2A\_DOMINO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LAB2A\_DOMINO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }lab2\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classlab2_1_1_domino}{Domino}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ end1;\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ end2;\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classlab2_1_1_domino_ad61089634a0876205d3bc3c592d08672}{Domino}}():\ end1(0),\ end2(0)\ \{\}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classlab2_1_1_domino_a67cf1c2830394fe12c2196474c29fc32}{Domino}}(\textcolor{keywordtype}{int}\ value1,\ \textcolor{keywordtype}{int}\ value2):\ end1(value1),\ end2(value2)\ \{\}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classlab2_1_1_domino}{Domino}}\ \mbox{\hyperlink{classlab2_1_1_domino_aa2b7b9a75cccc8e6367e0212c1acea04}{createRandomDomino}}()\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ a\ =\ 1\ +\ rand()\ \%\ 6;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ b\ =\ 1\ +\ rand()\ \%\ 6;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classlab2_1_1_domino_ad61089634a0876205d3bc3c592d08672}{Domino}}(a,\ b);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classlab2_1_1_domino_a1aa971b7e5bd6d0c649fd10ea3e7508c}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classlab2_1_1_domino}{Domino}}\ \&domino)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classlab2_1_1_domino}{Domino}}\ \mbox{\hyperlink{classlab2_1_1_domino_a509e0306a46962d0950823d67b58fb45}{operator\string~}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classlab2_1_1_domino_a9dc95f3bf830d2b56317192ba41eb3ce}{operator<<}}(std::ostream\&\ os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classlab2_1_1_domino}{Domino}}\ \&domino);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\ \&\ \mbox{\hyperlink{classlab2_1_1_domino_affeab76f3b724dd6d750aa9562f37795}{operator>>}}(std::istream\ \&is,\ \mbox{\hyperlink{classlab2_1_1_domino}{Domino}}\ \&domino);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classlab2_1_1_domino_a914705bd66806f0ad6ddea014b5d085c}{setEnds}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b)\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>end1\ =\ a;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>end2\ =\ b;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlab2_1_1_domino_aa984020f8303626d4e428fcd50327354}{getEnd1}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ end1;\ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlab2_1_1_domino_a2fe2f4dc8b6b997688dd5cc4df836241}{getEnd2}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ end2;\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlab2_1_1_domino_a39fc57883fc69b31ba4788c6316eba7b}{getSum}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ (end1\ +\ end2);\ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classlab2_1_1_domino_a62d3e975156858935ab1d2a0ae0d7536}{displayAsciiArt}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00121\ \ \ \ \ \};}
+\DoxyCodeLine{00122\ \}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//LAB2A\_DOMINO\_H}}
+
+\end{DoxyCode}

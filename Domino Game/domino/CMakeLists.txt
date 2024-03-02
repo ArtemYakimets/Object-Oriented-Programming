@@ -1,0 +1,1 @@
+add_library(domino domino.h domino.cpp domino_group.h domino_group.cpp dialog.h dialog.cpp)

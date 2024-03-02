@@ -1,0 +1,236 @@
+\doxysection{lab2\+::Domino Class Reference}
+\hypertarget{classlab2_1_1_domino}{}\label{classlab2_1_1_domino}\index{lab2::Domino@{lab2::Domino}}
+
+
+A class representing a domino tile with two numeric values (ends).  
+
+
+
+
+{\ttfamily \#include $<$domino.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlab2_1_1_domino_ad61089634a0876205d3bc3c592d08672}{Domino}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino_a67cf1c2830394fe12c2196474c29fc32}{Domino}} (int value1, int value2)
+\begin{DoxyCompactList}\small\item\em Constructor with specific values for ends. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlab2_1_1_domino_a1aa971b7e5bd6d0c649fd10ea3e7508c}{operator==}} (const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&domino) const
+\begin{DoxyCompactList}\small\item\em Checks if two dominoes are equal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \mbox{\hyperlink{classlab2_1_1_domino_a509e0306a46962d0950823d67b58fb45}{operator\texorpdfstring{$\sim$}{\string~}}} () const
+\begin{DoxyCompactList}\small\item\em Creates a new domino by swapping the values of ends. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlab2_1_1_domino_a914705bd66806f0ad6ddea014b5d085c}{set\+Ends}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Sets the values of both ends. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlab2_1_1_domino_aa984020f8303626d4e428fcd50327354}{get\+End1}} () const
+\begin{DoxyCompactList}\small\item\em Gets the value of the first end. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlab2_1_1_domino_a2fe2f4dc8b6b997688dd5cc4df836241}{get\+End2}} () const
+\begin{DoxyCompactList}\small\item\em Gets the value of the second end. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlab2_1_1_domino_a39fc57883fc69b31ba4788c6316eba7b}{get\+Sum}} () const
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the values on both ends. \end{DoxyCompactList}\item 
+\Hypertarget{classlab2_1_1_domino_a62d3e975156858935ab1d2a0ae0d7536}\label{classlab2_1_1_domino_a62d3e975156858935ab1d2a0ae0d7536} 
+void {\bfseries display\+Ascii\+Art} () const
+\begin{DoxyCompactList}\small\item\em Displays the domino as ASCII art on the standard output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \mbox{\hyperlink{classlab2_1_1_domino_aa2b7b9a75cccc8e6367e0212c1acea04}{create\+Random\+Domino}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random domino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classlab2_1_1_domino_a9dc95f3bf830d2b56317192ba41eb3ce}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&domino)
+\begin{DoxyCompactList}\small\item\em Outputs the domino to an output stream. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classlab2_1_1_domino_affeab76f3b724dd6d750aa9562f37795}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&domino)
+\begin{DoxyCompactList}\small\item\em Inputs a domino from an input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a domino tile with two numeric values (ends). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlab2_1_1_domino_ad61089634a0876205d3bc3c592d08672}\label{classlab2_1_1_domino_ad61089634a0876205d3bc3c592d08672} 
+\index{lab2::Domino@{lab2::Domino}!Domino@{Domino}}
+\index{Domino@{Domino}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{Domino()}{Domino()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+::\+Domino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+Creates a domino with both ends initialized to 0. \Hypertarget{classlab2_1_1_domino_a67cf1c2830394fe12c2196474c29fc32}\label{classlab2_1_1_domino_a67cf1c2830394fe12c2196474c29fc32} 
+\index{lab2::Domino@{lab2::Domino}!Domino@{Domino}}
+\index{Domino@{Domino}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{Domino()}{Domino()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily lab2\+::\+Domino\+::\+Domino (\begin{DoxyParamCaption}\item[{int}]{value1,  }\item[{int}]{value2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with specific values for ends. 
+
+Creates a domino with the specified values for its ends.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value1} & The value of the first end. \\
+\hline
+{\em value2} & The value of the second end. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlab2_1_1_domino_aa2b7b9a75cccc8e6367e0212c1acea04}\label{classlab2_1_1_domino_aa2b7b9a75cccc8e6367e0212c1acea04} 
+\index{lab2::Domino@{lab2::Domino}!createRandomDomino@{createRandomDomino}}
+\index{createRandomDomino@{createRandomDomino}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{createRandomDomino()}{createRandomDomino()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} lab2\+::\+Domino\+::create\+Random\+Domino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Generates a random domino. 
+
+Creates a domino with random values between 1 and 6 for both ends.
+
+\begin{DoxyReturn}{Returns}
+A randomly generated domino. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_aa984020f8303626d4e428fcd50327354}\label{classlab2_1_1_domino_aa984020f8303626d4e428fcd50327354} 
+\index{lab2::Domino@{lab2::Domino}!getEnd1@{getEnd1}}
+\index{getEnd1@{getEnd1}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{getEnd1()}{getEnd1()}}
+{\footnotesize\ttfamily int lab2\+::\+Domino\+::get\+End1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the value of the first end. 
+
+\begin{DoxyReturn}{Returns}
+The value of the first end. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_a2fe2f4dc8b6b997688dd5cc4df836241}\label{classlab2_1_1_domino_a2fe2f4dc8b6b997688dd5cc4df836241} 
+\index{lab2::Domino@{lab2::Domino}!getEnd2@{getEnd2}}
+\index{getEnd2@{getEnd2}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{getEnd2()}{getEnd2()}}
+{\footnotesize\ttfamily int lab2\+::\+Domino\+::get\+End2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the value of the second end. 
+
+\begin{DoxyReturn}{Returns}
+The value of the second end. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_a39fc57883fc69b31ba4788c6316eba7b}\label{classlab2_1_1_domino_a39fc57883fc69b31ba4788c6316eba7b} 
+\index{lab2::Domino@{lab2::Domino}!getSum@{getSum}}
+\index{getSum@{getSum}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{getSum()}{getSum()}}
+{\footnotesize\ttfamily int lab2\+::\+Domino\+::get\+Sum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the sum of the values on both ends. 
+
+\begin{DoxyReturn}{Returns}
+The sum of the values on both ends. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_a1aa971b7e5bd6d0c649fd10ea3e7508c}\label{classlab2_1_1_domino_a1aa971b7e5bd6d0c649fd10ea3e7508c} 
+\index{lab2::Domino@{lab2::Domino}!operator==@{operator==}}
+\index{operator==@{operator==}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool lab2\+::\+Domino\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&}]{domino }\end{DoxyParamCaption}) const}
+
+
+
+Checks if two dominoes are equal. 
+
+Two dominoes are considered equal if they have the same values on their ends, regardless of their order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em domino} & The domino to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the dominoes are equal, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_a509e0306a46962d0950823d67b58fb45}\label{classlab2_1_1_domino_a509e0306a46962d0950823d67b58fb45} 
+\index{lab2::Domino@{lab2::Domino}!operator\texorpdfstring{$\sim$}{\string~}@{operator\texorpdfstring{$\sim$}{\string~}}}
+\index{operator\texorpdfstring{$\sim$}{\string~}@{operator\texorpdfstring{$\sim$}{\string~}}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\sim$}{\string~}()}{operator\string~()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} lab2\+::\+Domino\+::operator\texorpdfstring{$\sim$}{\string~} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Creates a new domino by swapping the values of ends. 
+
+\begin{DoxyReturn}{Returns}
+A new domino with the values of its ends swapped. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_a914705bd66806f0ad6ddea014b5d085c}\label{classlab2_1_1_domino_a914705bd66806f0ad6ddea014b5d085c} 
+\index{lab2::Domino@{lab2::Domino}!setEnds@{setEnds}}
+\index{setEnds@{setEnds}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{setEnds()}{setEnds()}}
+{\footnotesize\ttfamily void lab2\+::\+Domino\+::set\+Ends (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the values of both ends. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The value for the first end. \\
+\hline
+{\em b} & The value for the second end. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classlab2_1_1_domino_a9dc95f3bf830d2b56317192ba41eb3ce}\label{classlab2_1_1_domino_a9dc95f3bf830d2b56317192ba41eb3ce} 
+\index{lab2::Domino@{lab2::Domino}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&}]{domino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Outputs the domino to an output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em domino} & The domino to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+\Hypertarget{classlab2_1_1_domino_affeab76f3b724dd6d750aa9562f37795}\label{classlab2_1_1_domino_affeab76f3b724dd6d750aa9562f37795} 
+\index{lab2::Domino@{lab2::Domino}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!lab2::Domino@{lab2::Domino}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classlab2_1_1_domino}{Domino}} \&}]{domino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Inputs a domino from an input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream. \\
+\hline
+{\em domino} & The domino to input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+domino.\+h\item 
+domino.\+cpp\end{DoxyCompactItemize}
